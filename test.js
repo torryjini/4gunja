@@ -449,29 +449,13 @@ function checkedFalseHandler(x) {
       return alert("모든 문항에 답해주세요");
     }
 
-    let circle = [
-        { name : "bam", value : bamCircle },
-        { name : "pl", value : plCircle },
-        { name : "orc", value : orcCircle },
-        { name : "chr", value : chrCircle}]
+    let total = [
+        { name : "bam", value : bamCircle + bamTriangle },
+        { name : "pl", value : plCircle + plTriangle },
+        { name : "orc", value : orcCircle + orcTriangle },
+        { name : "chr", value : chrCircle + chrTriangle }]
         
-        circle.sort(function (a, b) {
-            if (a.value > b.value) {
-              return 1;
-            }
-            if (a.value < b.value) {
-              return -1;
-            }
-            return 0;
-          });
-
-    let triangle = [
-        { name : "bam", value : bamTriangle },
-        { name : "pl", value : plTriangle },
-        { name : "orc", value : orcTriangle },
-        { name : "chr", value : chrTriangle }]
-        
-        triangle.sort(function (a, b) {
+        total.sort(function (a, b) {
             if (a.value > b.value) {
               return 1;
             }
@@ -482,17 +466,9 @@ function checkedFalseHandler(x) {
           });
 
     if (extro > intro) {
-      if(circle[3].name != triangle[3].name){
-        window.open(`ext/${circle[3].name}_${triangle[3].name}.html`);
-      } else {
-        alert('명확하게 결과를 계산하기 어렵습니다! 답변을 확인하세요!')
-      }
+        window.open(`ext/${total[3].name}_${total[2].name}.html`);
     } else {
-      if(circle[3].name != triangle[3].name){
-        window.open(`int/${circle[3].name}_${triangle[3].name}.html`);
-      } else {
-        alert('명확하게 결과를 계산하기 어렵습니다! 답변을 확인하세요!')
-      }
+        window.open(`int/${total[3].name}_${total[2].name}.html`);
     }
   }
 
