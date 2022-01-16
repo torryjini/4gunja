@@ -97,7 +97,7 @@ h3, caption, th {
 
 table {
   margin: auto;
-  width: 40%;
+  width: 60%;
 }
 
 table, th, td {
@@ -107,6 +107,26 @@ table, th, td {
 
 .hide {
   display: none;
+}
+
+#pl-th {
+  opacity: 0.8;
+  background-color: #EB917E;
+}
+
+#chr-th {
+  opacity: 0.8;
+  background-color: #FCE674;
+}
+
+#orc-th {
+  opacity: 0.8;
+  background-color: #E59DC4;
+}
+
+#bam-th {
+  opacity: 0.8;
+  background-color: #8BD486;
 }
 
 @media (orientation: portrait) {
