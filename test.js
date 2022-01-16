@@ -445,7 +445,7 @@ function checkedFalseHandler(x) {
       }
     }
 
-    if (extro + intro + bamCircle + plCircle + orcCircle + chrCircle + bamTriangle + plTriangle + orcTriangle +chrTriangle != 60) {
+    if (extro + intro + (bamCircle + plCircle + orcCircle + chrCircle)/2 + bamTriangle + plTriangle + orcTriangle + chrTriangle != 60) {
       return alert("모든 문항에 답해주세요");
     }
 
