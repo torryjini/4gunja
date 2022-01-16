@@ -387,28 +387,28 @@ function checkedFalseHandler(x) {
     answers = document.getElementsByClassName("bamboo-circle");
     for (let i = 0; i < answers.length; i++) {
       if (answers[i].checked) {
-        bamCircle++;
+        bamCircle = bamCircle + 2;
       }
     }
 
     answers = document.getElementsByClassName("plum-circle");
     for (let i = 0; i < answers.length; i++) {
       if (answers[i].checked) {
-        plCircle++;
+        plCircle = plCircle + 2;
       }
     }
 
     answers = document.getElementsByClassName("orchid-circle");
     for (let i = 0; i < answers.length; i++) {
       if (answers[i].checked) {
-        orcCircle++;
+        orcCircle = orcCircle + 2;
       }
     }
 
     answers = document.getElementsByClassName("chrysanthemum-circle");
     for (let i = 0; i < answers.length; i++) {
       if (answers[i].checked) {
-        chrCircle++;
+        chrCircle = chrCircle + 2;
       }
     }
 
