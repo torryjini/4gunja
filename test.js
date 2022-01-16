@@ -135,6 +135,7 @@ for(let i = 0; i < bamboo.length; i++){
               onclick="circleTriangleHandler(${i})"
             />
             <label for="bamboo-${i}">${bamboo[i]}</label>
+          </div>
           <div class="answer">
             <input
               type="radio"
@@ -527,6 +528,15 @@ function checkedFalseHandler(x) {
             }
             return 0;
           });
+    
+          document.getElementById("ext-score").innerHTML = `${extro}`
+          document.getElementById("int-score").innerHTML = `${intro}`
+          document.getElementById("pl-score").innerHTML = `${plCircle + plTriangle}`
+          document.getElementById("orc-score").innerHTML = `${orcCircle + orcTriangle}`
+          document.getElementById("chr-score").innerHTML = `${chrCircle + chrTriangle}`
+          document.getElementById("bam-score").innerHTML = `${bamCircle + bamTriangle}`      
+
+          document.getElementById("result-table").classList.remove("hide")
 
     if (extro > intro) {
         window.open(`ext/${total[3].name}_${total[2].name}.html`);
