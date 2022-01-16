@@ -3,8 +3,8 @@ const introvert = ["천천히 어울리는", "차분한", "충분히 생각하�
 
 for(let i = 0; i < extrovert.length; i++){
     document.querySelector(".ext-int").innerHTML += `
+    <span>${i+1}.</span>
     <article>
-        <span>${i+1}.</span>
         <input type="radio" name="ext-int-q${i}" id="ext-${i}" class="extro" />
         <label for="ext-${i}">${extrovert[i]}</label>
         <input type="radio" name="ext-int-q${i}" id="int-${i}" class="intro" />
