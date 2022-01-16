@@ -26,145 +26,176 @@ for(let i = 0; i < bamboo.length; i++){
         <h3>
         ${i+1}. 네 단어 중 자신을 가장 잘 표현하고 가까운 것 하나에 체크하세요.
         </h3>
-        <article id="q${i}-1">
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="bamboo-${i}"
-          class="bamboo-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="bamboo-${i}">${bamboo[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="plum-${i}"
-          class="plum-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="plum-${i}">${plum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="orchid-${i}"
-          class="orchid-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="orchid-${i}">${orchid[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="chrysanthemum-${i}"
-          class="chrysanthemum-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="chrysanthemum-${i}">${chrysanthemum[i]}</label>
+        <article id="q${i}-1" class="four-gunja-q">
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}"
+            id="bamboo-${i}"
+            class="bamboo-circle"
+            onclick="circleTriangleHandler(${i})"
+          />
+          <label for="bamboo-${i}">${bamboo[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}"
+            id="plum-${i}"
+            class="plum-circle"
+            onclick="circleTriangleHandler(${i})"
+          />
+          <label for="plum-${i}">${plum[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}"
+            id="orchid-${i}"
+            class="orchid-circle"
+            onclick="circleTriangleHandler(${i})"
+          />
+          <label for="orchid-${i}">${orchid[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}"
+            id="chrysanthemum-${i}"
+            class="chrysanthemum-circle"
+            onclick="circleTriangleHandler(${i})"
+          />
+          <label for="chrysanthemum-${i}">${chrysanthemum[i]}</label>
+        </div>
       </article>
       <h3>
         그 다음 가까운 것 하나에 체크하세요.
       </h3>
-      <article id="q${i}-2">
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="bamboo-${i}-triangle"
-          class="bamboo-triangle"
-        />
-        <label for="bamboo-${i}-triangle">${bamboo[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="plum-${i}-triangle"
-          class="plum-triangle"
-        />
-        <label for="plum-${i}-triangle">${plum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="orchid-${i}-triangle"
-          class="orchid-triangle"
-        />
-        <label for="orchid-${i}-triangle">${orchid[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="chrysanthemum-${i}-triangle"
-          class="chrysanthemum-triangle"
-        />
-        <label for="chrysanthemum-${i}-triangle">${chrysanthemum[i]}</label>
-      </article>
+      <article id="q${i}-2" class="four-gunja-q">
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="bamboo-${i}-triangle"
+            class="bamboo-triangle"
+          />
+          <label for="bamboo-${i}-triangle">${bamboo[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="plum-${i}-triangle"
+            class="plum-triangle"
+          />
+          <label for="plum-${i}-triangle">${plum[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="orchid-${i}-triangle"
+            class="orchid-triangle"
+          />
+          <label for="orchid-${i}-triangle">${orchid[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="chrysanthemum-${i}-triangle"
+            class="chrysanthemum-triangle"
+          />
+          <label for="chrysanthemum-${i}-triangle">${chrysanthemum[i]}</label>
+          </div>
+        </article>
         `
     } else if(i >= 5 && i < 10){
         document.querySelector(".four-gunja").innerHTML += `
         <h3>
             ${i+1}. 네 단어 중 자신을 가장 잘 표현하고 가까운 것 하나에 체크하세요.
         </h3>
-        <article id="q${i}-1">
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="chrysanthemum-${i}"
-          class="chrysanthemum-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="chrysanthemum-${i}">${chrysanthemum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="bamboo-${i}"
-          class="bamboo-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="bamboo-${i}">${bamboo[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="plum-${i}"
-          class="plum-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="plum-${i}">${plum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="orchid-${i}"
-          class="orchid-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="orchid-${i}">${orchid[i]}</label>
+        <article id="q${i}-1" class="four-gunja-q">
+          <div class="answer">
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="chrysanthemum-${i}"
+              class="chrysanthemum-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="chrysanthemum-${i}">${chrysanthemum[i]}</label>
+          </div>
+          <div class="answer">
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="bamboo-${i}"
+              class="bamboo-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="bamboo-${i}">${bamboo[i]}</label>
+          <div class="answer">
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="plum-${i}"
+              class="plum-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="plum-${i}">${plum[i]}</label>
+          </div>
+          <div class="answer">
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="orchid-${i}"
+              class="orchid-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="orchid-${i}">${orchid[i]}</label>
+          </div>
       </article>
       <h3>
           그 다음 가까운 것 하나에 체크하세요.
       </h3>
-      <article id="q${i}-2">
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="chrysanthemum-${i}-triangle"
-          class="chrysanthemum-triangle"
-        />
-        <label for="chrysanthemum-${i}-triangle">${chrysanthemum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="bamboo-${i}-triangle"
-          class="bamboo-triangle"
-        />
-        <label for="bamboo-${i}-triangle">${bamboo[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="plum-${i}-triangle"
-          class="plum-triangle"
-        />
-        <label for="plum-${i}-triangle">${plum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="orchid-${i}-triangle"
-          class="orchid-triangle"
-        />
-        <label for="orchid-${i}-triangle">${orchid[i]}</label>
+      <article id="q${i}-2" class="four-gunja-q">
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="chrysanthemum-${i}-triangle"
+            class="chrysanthemum-triangle"
+          />
+          <label for="chrysanthemum-${i}-triangle">${chrysanthemum[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="bamboo-${i}-triangle"
+            class="bamboo-triangle"
+          />
+          <label for="bamboo-${i}-triangle">${bamboo[i]}</label>
+        </div>
+        <div class="answer">  
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="plum-${i}-triangle"
+            class="plum-triangle"
+          />
+          <label for="plum-${i}-triangle">${plum[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="orchid-${i}-triangle"
+            class="orchid-triangle"
+          />
+          <label for="orchid-${i}-triangle">${orchid[i]}</label>
+        </div>
       </article>
         `
     } else if(i >= 10 && i < 15){
@@ -172,72 +203,88 @@ for(let i = 0; i < bamboo.length; i++){
         <h3>
             ${i+1}. 네 단어 중 자신을 가장 잘 표현하고 가까운 것 하나에 체크하세요.
         </h3>
-        <article id="q${i}-1">
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="orchid-${i}"
-          class="orchid-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="orchid-${i}">${orchid[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="chrysanthemum-${i}"
-          class="chrysanthemum-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="chrysanthemum-${i}">${chrysanthemum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="bamboo-${i}"
-          class="bamboo-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="bamboo-${i}">${bamboo[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="plum-${i}"
-          class="plum-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="plum-${i}">${plum[i]}</label>
+        <article id="q${i}-1" class="four-gunja-q">
+          <div class="answer">  
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="orchid-${i}"
+              class="orchid-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="orchid-${i}">${orchid[i]}</label>
+          </div>
+          <div class="answer">  
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="chrysanthemum-${i}"
+              class="chrysanthemum-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="chrysanthemum-${i}">${chrysanthemum[i]}</label>
+          </div>
+          <div class="answer">
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="bamboo-${i}"
+              class="bamboo-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="bamboo-${i}">${bamboo[i]}</label>
+          </div>
+          <div class="answer">
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="plum-${i}"
+              class="plum-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="plum-${i}">${plum[i]}</label>
+          </div>
       </article>
       <h3>
         그 다음 가까운 것 하나에 체크하세요.
       </h3>
-      <article id="q${i}-2">
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="orchid-${i}-triangle"
-          class="orchid-triangle"
-        />
-        <label for="orchid-${i}-triangle">${orchid[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="chrysanthemum-${i}-triangle"
-          class="chrysanthemum-triangle"
-        />
-        <label for="chrysanthemum-${i}-triangle">${chrysanthemum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="bamboo-${i}-triangle"
-          class="bamboo-triangle"
-        />
-        <label for="bamboo-${i}-triangle">${bamboo[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="plum-${i}-triangle"
-          class="plum-triangle"
-        />
-        <label for="plum-${i}-triangle">${plum[i]}</label>
+      <article id="q${i}-2" class="four-gunja-q">
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="orchid-${i}-triangle"
+            class="orchid-triangle"
+          />
+          <label for="orchid-${i}-triangle">${orchid[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="chrysanthemum-${i}-triangle"
+            class="chrysanthemum-triangle"
+          />
+          <label for="chrysanthemum-${i}-triangle">${chrysanthemum[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="bamboo-${i}-triangle"
+            class="bamboo-triangle"
+          />
+          <label for="bamboo-${i}-triangle">${bamboo[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="plum-${i}-triangle"
+            class="plum-triangle"
+          />
+          <label for="plum-${i}-triangle">${plum[i]}</label>
+        </div>
       </article>
         `
     } else {
@@ -245,72 +292,88 @@ for(let i = 0; i < bamboo.length; i++){
         <h3>
         ${i+1}. 네 단어 중 자신을 가장 잘 표현하고 가까운 것 하나에 체크하세요.
         </h3>
-        <article id="q${i}-1">
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="plum-${i}"
-          class="plum-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="plum-${i}">${plum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="orchid-${i}"
-          class="orchid-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="orchid-${i}">${orchid[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="chrysanthemum-${i}"
-          class="chrysanthemum-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="chrysanthemum-${i}">${chrysanthemum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}"
-          id="bamboo-${i}"
-          class="bamboo-circle"
-          onclick="circleTriangleHandler(${i})"
-        />
-        <label for="bamboo-${i}">${bamboo[i]}</label>
+        <article id="q${i}-1" class="four-gunja-q">
+          <div class="answer">        
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="plum-${i}"
+              class="plum-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="plum-${i}">${plum[i]}</label>
+          </div>
+          <div class="answer">  
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="orchid-${i}"
+              class="orchid-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="orchid-${i}">${orchid[i]}</label>
+          </div>
+          <div class="answer">
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="chrysanthemum-${i}"
+              class="chrysanthemum-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="chrysanthemum-${i}">${chrysanthemum[i]}</label>
+          </div>
+          <div class="answer">  
+            <input
+              type="radio"
+              name="4-gunja-q${i}"
+              id="bamboo-${i}"
+              class="bamboo-circle"
+              onclick="circleTriangleHandler(${i})"
+            />
+            <label for="bamboo-${i}">${bamboo[i]}</label>
+          </div>
       </article>
       <h3>
         그 다음 가까운 것 하나에 체크하세요.
       </h3>
-      <article id="q${i}-2">
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="plum-${i}-triangle"
-          class="plum-triangle"
-        />
-        <label for="plum-${i}-triangle">${plum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="orchid-${i}-triangle"
-          class="orchid-triangle"
-        />
-        <label for="orchid-${i}-triangle">${orchid[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="chrysanthemum-${i}-triangle"
-          class="chrysanthemum-triangle"
-        />
-        <label for="chrysanthemum-${i}-triangle">${chrysanthemum[i]}</label>
-        <input
-          type="radio"
-          name="4-gunja-q${i}-2"
-          id="bamboo-${i}-triangle"
-          class="bamboo-triangle"
-        />
-        <label for="bamboo-${i}-triangle">${bamboo[i]}</label>
+      <article id="q${i}-2" class="four-gunja-q">
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="plum-${i}-triangle"
+            class="plum-triangle"
+          />
+          <label for="plum-${i}-triangle">${plum[i]}</label>
+        </div>
+        <div class="answer">
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="orchid-${i}-triangle"
+            class="orchid-triangle"
+          />
+          <label for="orchid-${i}-triangle">${orchid[i]}</label>
+        </div>
+        <div class="answer">  
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="chrysanthemum-${i}-triangle"
+            class="chrysanthemum-triangle"
+          />
+          <label for="chrysanthemum-${i}-triangle">${chrysanthemum[i]}</label>
+        </div>
+        <div class="answer">  
+          <input
+            type="radio"
+            name="4-gunja-q${i}-2"
+            id="bamboo-${i}-triangle"
+            class="bamboo-triangle"
+          />
+          <label for="bamboo-${i}-triangle">${bamboo[i]}</label>
+        </div>
       </article>
         `
     }
