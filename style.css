@@ -136,6 +136,10 @@ table, th, td {
     margin-bottom: 1rem;
   }
 
+  table {
+    width: 95%;
+  }
+
   .result-img {
     width: 40%;
   }
